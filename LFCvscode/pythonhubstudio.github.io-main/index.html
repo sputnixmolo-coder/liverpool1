@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/styles/mycss.css">
+  <link rel="stylesheet" href="source/styles/bgvideo.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/liverpoolicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/liverpoolicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/liverpoolicon.png">
+  <link rel="manifest" href="source/files/favicon_io/site.webmanifest">
+
+  <title>Ливерпуль ФК - You'll Never Walk Alone</title>
+
+  <style>
+    /* Применение стильного шрифта ко всей странице */
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Настройки для одинакового размера картинок карусели */
+    .carousel-item img {
+      height: auto;
+      max-height: 500px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* Точечная корректировка положения фото (чтобы лица были видны) */
+    .img-default { object-position: center; }
+    .img-salah, .img-alisson, .img-gakpo { object-position: center; }
+    .img-wirtz { object-position: center; }
+
+      /* Общие настройки для всех фото игроков */
+.card-img-top, .carousel-item img {
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Стильный шрифт для всего сайта */
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #000000; border-bottom: 3px solid #C8102E;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" style="font-weight: 800; color: #C8102E; font-size: 1.5em;">🔴 Ливерпуль ФК</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="index.html" style="color: white;">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="players.html" style="color: white;">Игроки</a></li>
+        <li class="nav-item"><a class="nav-link" href="history.html" style="color: white;">История и Награды</a></li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/@LiverpoolFC" target="_blank">
+            <img style="width: 30px;" src="source/files/yt.png" alt="YouTube">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/liverpoolfc/" target="_blank">
+            <img style="width: 30px;" src="source/files/inst.png" alt="Instagram">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://t.me/LiverpoolFC" target="_blank">
+            <img style="width: 25px;" src="source/files/tg.png" alt="Telegram">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  </header>
+
+  <section>
+    <div class="bgvideo">
+      <video autoplay muted loop playsinline preload="auto" style="width: 100%; height: 100%; object-fit: cover;">
+        <source src="source/files/liverucl.mp4" type="video/mp4">
+      </video>
+      <div class="effect" style="background-color: rgba(200, 16, 46, 0.4);"></div>
+      <div class="video-text">
+        <h1 style="font-weight: 800;">You'll Never Walk Alone</h1>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <!-- КАРУСЕЛЬ ИГРОКОВ -->
+          <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="true" style="background: linear-gradient(135deg, #C8102E 0%, #8B0000 50%, #FFFFFF 100%); border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(200,16,46,0.3);">
+            <div class="carousel-indicators mb-4">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1" style="background-color: #FFFFFF;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Слайд 2" style="background-color: #FFFFFF;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Слайд 3" style="background-color: #FFFFFF;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Слайд 4" style="background-color: #FFFFFF;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Слайд 5" style="background-color: #FFFFFF;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Слайд 6" style="background-color: #FFFFFF;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Слайд 7" style="background-color: #FFFFFF;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Слайд 8" style="background-color: #FFFFFF;"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="text-center">
+                  <img src="source/images/salah.jpg" class="img-fluid rounded shadow-lg" style="max-height: 380px; object-fit: contain;" alt="Мохаммед Салах">
+                  <h3 class="mt-4 fw-bold" style="color: #C8102E;">Мохаммед Салах</h3>
+                  <p class="fs-5 text-white fw-500">Египетский король. Главная звезда нашей атаки и живая легенда клуба с феноменальным голевым чутьем.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-center">
+                  <img src="source/images/vandijk.jpg" class="img-fluid rounded shadow-lg" style="max-height: 380px; object-fit: contain;" alt="Вирджил ван Дейк">
+                  <h3 class="mt-4 fw-bold" style="color: #C8102E;">Вирджил ван Дейк</h3>
+                  <p class="fs-5 text-white fw-500">Наш Капитан. Непроходимая стена обороны «Ливерпуля», лучший защитник мирового класса.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-center">
+                  <img src="source/images/alisson.jpg" class="img-fluid rounded shadow-lg" style="max-height: 380px; object-fit: contain;" alt="Алиссон Беккер">
+                  <h3 class="mt-4 fw-bold" style="color: #C8102E;">Алиссон Беккер</h3>
+                  <p class="fs-5 text-white fw-500">Бразильский волшебник. Один из лучших голкиперов планеты, чья реакция спасает в самые нужные моменты.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-center">
+                  <img src="source/images/gakpo.jpg" class="img-fluid rounded shadow-lg" style="max-height: 380px; object-fit: contain;" alt="Коди Гакпо">
+                  <h3 class="mt-4 fw-bold" style="color: #C8102E;">Коди Гакпо</h3>
+                  <p class="fs-5 text-white fw-500">Универсальный форвард из Нидерландов. Мощный, быстрый и креативный игрок, создающий опасность у ворот соперника.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-center">
+                  <img src="source/images/Szoboszlai.jpg" class="img-fluid rounded shadow-lg" style="max-height: 380px; object-fit: contain;" alt="Доминик Собослаи">
+                  <h3 class="mt-4 fw-bold" style="color: #C8102E;">Доминик Собослаи</h3>
+                  <p class="fs-5 text-white fw-500">Двигатель полузащиты. Венгерский талант с потрясающим видением поля и сумасшедшим по силе ударом.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-center">
+                  <img src="source/images/ekitike.jpg" class="img-fluid rounded shadow-lg" style="max-height: 380px; object-fit: contain;" alt="Юго Экитике">
+                  <h3 class="mt-4 fw-bold" style="color: #C8102E;">Юго Экитике</h3>
+                  <p class="fs-5 text-white fw-500">Молодая французская звезда. Динамичный, техничный нападающий, приносящий свежесть и скорость в линию атаки.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-center">
+                  <img src="source/images/wirtz.jpg" class="img-fluid rounded shadow-lg" style="max-height: 380px; object-fit: contain;" alt="Флориан Вирц">
+                  <h3 class="mt-4 fw-bold" style="color: #C8102E;">Флориан Вирц</h3>
+                  <p class="fs-5 text-white fw-500">Немецкий гений центра поля. Главный креативщик команды, способный вскрыть любую оборону идеальным пасом.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="text-center">
+                  <img src="source/images/Slot.jpg" class="img-fluid rounded shadow-lg" style="max-height: 380px; object-fit: contain;" alt="Арне Слот">
+                  <h3 class="mt-4 fw-bold" style="color: #C8102E;">Арне Слот</h3>
+                  <p class="fs-5 text-white fw-500">Главный тренер. Выдающийся тактик, который ведет клуб к новым трофеям, сохраняя наш знаменитый агрессивный стиль игры.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #FFFFFF; border-radius: 50%; width: 55px; height: 55px; opacity: 0.8;"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #FFFFFF; border-radius: 50%; width: 55px; height: 55px; opacity: 0.8;"></span>
+            </button>
+          </div>
+
+          <!-- КНОПКА ПОДДЕРЖКИ -->
+          <div class="col-12 text-center mt-5 position-relative mb-5">
+            <button id="fan-btn" class="btn btn-danger btn-lg rounded-pill px-5 py-3 fw-bold shadow-lg" style="background-color: #C8102E; border: none; font-size: 1.5rem; transition: transform 0.2s;">
+              ❤️ Поддержать команду!
+            </button>
+            <p class="mt-3 fw-bold fs-5 text-dark">
+              Уровень фанатской любви: <span id="click-counter" style="color: #C8102E; font-size: 1.8rem;">0</span>
+            </p>
+          </div>
+
+          <!-- РАСПИСАНИЕ МАТЧЕЙ -->
+          <div class="mt-5 mb-5">
+            <h2 class="fw-bold mb-4" style="color: #C8102E; font-size: 2.2rem; border-bottom: 4px solid #C8102E; padding-bottom: 15px;">📅 Расписание матчей</h2>
+            
+            <div class="row mt-4">
+              <!-- ПРОШЕДШИЕ МАТЧИ -->
+              <div class="col-lg-6 col-md-12 mb-5">
+                <h4 class="fw-bold mb-4 d-flex align-items-center" style="color: #000;">
+                  <span style="color: #C8102E; font-size: 1.5rem; margin-right: 10px;">✓</span> Прошедшие матчи
+                </h4>
+
+                <!-- Матч 1: Ливерпуль 3-1 Челси -->
+                <div class="card mb-4 shadow-md border-0" style="border-top: 5px solid #C8102E; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);">
+                  <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                      <small style="background-color: #C8102E; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">АПЛ</small>
+                      <small style="color: #666;">16 февраля 2026 • 15:00</small>
+                      <small style="background-color: #4CAF50; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">🏠 Энфилд</small>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #C8102E; margin: 0;">Ливерпуль</h5>
+                        <h3 class="fw-bold" style="color: #C8102E; margin: 5px 0;">3</h3>
+                      </div>
+                      <div style="text-align: center; flex: 1; color: #999;">
+                        <span style="font-size: 1.2rem;">-</span>
+                      </div>
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #1976D2; margin: 0;">Челси</h5>
+                        <h3 class="fw-bold" style="color: #1976D2; margin: 5px 0;">1</h3>
+                      </div>
+                    </div>
+                    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 8px; font-size: 0.9rem; color: #333;">
+                      <strong>Голы:</strong><br>
+                      🔴 <strong>Ливерпуль:</strong> Мохаммед Салах (22'), Коди Гакпо (45'), Доминик Собослаи (67')<br>
+                      🔵 <strong>Челси:</strong> Николо Барелла (38')
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Матч 2: Манчестер Сити 1-2 Ливерпуль -->
+                <div class="card mb-4 shadow-md border-0" style="border-top: 5px solid #C8102E; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);">
+                  <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                      <small style="background-color: #C8102E; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">АПЛ</small>
+                      <small style="color: #666;">9 февраля 2026 • 17:30</small>
+                      <small style="background-color: #FF6B6B; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">✈️ Гости</small>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #87CEEB; margin: 0;">Манчестер Сити</h5>
+                        <h3 class="fw-bold" style="color: #87CEEB; margin: 5px 0;">1</h3>
+                      </div>
+                      <div style="text-align: center; flex: 1; color: #999;">
+                        <span style="font-size: 1.2rem;">-</span>
+                      </div>
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #C8102E; margin: 0;">Ливерпуль</h5>
+                        <h3 class="fw-bold" style="color: #C8102E; margin: 5px 0;">2</h3>
+                      </div>
+                    </div>
+                    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 8px; font-size: 0.9rem; color: #333;">
+                      <strong>Голы:</strong><br>
+                      🔵 <strong>Манчестер Сити:</strong> Фил Фоден (31')<br>
+                      🔴 <strong>Ливерпуль:</strong> Доминик Собослаи (54'), Мохаммед Салах (89')
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Матч 3: Ливерпуль 4-0 Вест Хэм -->
+                <div class="card shadow-md border-0" style="border-top: 5px solid #C8102E; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);">
+                  <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                      <small style="background-color: #C8102E; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">АПЛ</small>
+                      <small style="color: #666;">2 февраля 2026 • 20:00</small>
+                      <small style="background-color: #4CAF50; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">🏠 Энфилд</small>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #C8102E; margin: 0;">Ливерпуль</h5>
+                        <h3 class="fw-bold" style="color: #C8102E; margin: 5px 0;">4</h3>
+                      </div>
+                      <div style="text-align: center; flex: 1; color: #999;">
+                        <span style="font-size: 1.2rem;">-</span>
+                      </div>
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #1A5B9A; margin: 0;">Вест Хэм</h5>
+                        <h3 class="fw-bold" style="color: #1A5B9A; margin: 5px 0;">0</h3>
+                      </div>
+                    </div>
+                    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 8px; font-size: 0.9rem; color: #333;">
+                      <strong>Голы:</strong><br>
+                      🔴 <strong>Ливерпуль:</strong> Мохаммед Салах (18'), Коди Гакпо (35'), Доминик Собослаи (52'), Юго Экитике (78')
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ПРЕДСТОЯЩИЕ МАТЧИ -->
+              <div class="col-lg-6 col-md-12 mb-5">
+                <h4 class="fw-bold mb-4 d-flex align-items-center" style="color: #000;">
+                  <span style="color: #FFA500; font-size: 1.5rem; margin-right: 10px;">▶</span> Предстоящие матчи
+                </h4>
+
+                <!-- Матч 1: Ливерпуль vs Тоттенхэм -->
+                <div class="card mb-4 shadow-md border-0" style="border-top: 5px solid #FFA500; background: linear-gradient(135deg, #fffbf0 0%, #fff9f0 100%);">
+                  <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                      <small style="background-color: #FFA500; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">АПЛ</small>
+                      <small style="color: #666;">22 февраля 2026 • 19:45</small>
+                      <small style="background-color: #4CAF50; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">🏠 Домашний</small>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #C8102E; margin: 0;">Ливерпуль</h5>
+                        <h4 style="color: #C8102E; margin: 5px 0; font-size: 2rem;">❓</h4>
+                      </div>
+                      <div style="text-align: center; flex: 1; color: #999;">
+                        <span style="font-size: 1.2rem;">VS</span>
+                      </div>
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #1A1A1A; margin: 0;">Тоттенхэм</h5>
+                        <h4 style="color: #1A1A1A; margin: 5px 0; font-size: 2rem;">❓</h4>
+                      </div>
+                    </div>
+                    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 8px; font-size: 0.9rem; color: #666;">
+                      <strong>📍 Стадион:</strong> Энфилд, Ливерпуль<br>
+                      <strong>🎫 Тур:</strong> Чемпионат Англии (АПЛ, Тур 26)
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Матч 2: Болтон vs Ливерпуль -->
+                <div class="card mb-4 shadow-md border-0" style="border-top: 5px solid #FFA500; background: linear-gradient(135deg, #fffbf0 0%, #fff9f0 100%);">
+                  <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                      <small style="background-color: #8B4513; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">Кубок ФА</small>
+                      <small style="color: #666;">1 марта 2026 • 15:00</small>
+                      <small style="background-color: #FF6B6B; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">✈️ Гости</small>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #FFFFFF; background: #1A1A1A; padding: 5px; border-radius: 5px; margin: 0;">Болтон</h5>
+                        <h4 style="color: #1A1A1A; margin: 5px 0; font-size: 2rem;">❓</h4>
+                      </div>
+                      <div style="text-align: center; flex: 1; color: #999;">
+                        <span style="font-size: 1.2rem;">VS</span>
+                      </div>
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #C8102E; margin: 0;">Ливерпуль</h5>
+                        <h4 style="color: #C8102E; margin: 5px 0; font-size: 2rem;">❓</h4>
+                      </div>
+                    </div>
+                    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 8px; font-size: 0.9rem; color: #666;">
+                      <strong>📍 Стадион:</strong> Юниверсити оф Болтон, Болтон<br>
+                      <strong>🎫 Турнир:</strong> Кубок Англии (Пятый раунд)
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Матч 3: Ливерпуль vs Манчестер Юнайтед -->
+                <div class="card shadow-md border-0" style="border-top: 5px solid #FFA500; background: linear-gradient(135deg, #fffbf0 0%, #fff9f0 100%);">
+                  <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                      <small style="background-color: #FFA500; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">АПЛ</small>
+                      <small style="color: #666;">8 марта 2026 • 20:00</small>
+                      <small style="background-color: #4CAF50; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold;">🏠 Домашний</small>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #C8102E; margin: 0;">Ливерпуль</h5>
+                        <h4 style="color: #C8102E; margin: 5px 0; font-size: 2rem;">❓</h4>
+                      </div>
+                      <div style="text-align: center; flex: 1; color: #999;">
+                        <span style="font-size: 1.2rem;">VS</span>
+                      </div>
+                      <div style="text-align: center; flex: 1;">
+                        <h5 class="fw-bold" style="color: #DA291C; margin: 0;">Манчестер Юнайтед</h5>
+                        <h4 style="color: #DA291C; margin: 5px 0; font-size: 2rem;">❓</h4>
+                      </div>
+                    </div>
+                    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 8px; font-size: 0.9rem; color: #666;">
+                      <strong>📍 Стадион:</strong> Энфилд, Ливерпуль<br>
+                      <strong>🎫 Турнир:</strong> Чемпионат Англии (АПЛ, Тур 28) - Дерби!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- БОКОВЫЕ ПАНЕЛИ -->
+          <div class="row mt-5">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="card shadow-lg border-0 rounded-lg" style="background: linear-gradient(135deg, #C8102E 0%, #a00d24 100%); color: white;">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-5">🏆 6-Time European Champions</h5>
+                  <p class="card-text">«Ливерпуль» выигрывал Лигу Чемпионов 6 раз, подтверждая свой статус одного из величайших клубов в истории.</p>
+                  <a href="history.html" style="color: white; text-decoration: underline; font-weight: 600;">Узнать больше >>></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="card shadow-lg border-0 rounded-lg" style="background: linear-gradient(135deg, #000 0%, #333 100%); color: white;">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-5">🔴 Anfield Stadium</h5>
+                  <p class="card-text">Наша легендарная домашняя арена. Место, где творится футбольная магия и царит самая потрясающая атмосфера в мире.</p>
+                  <a href="history.html" style="color: #C8102E; text-decoration: underline; font-weight: 600;">Узнать больше >>></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="card shadow-lg border-0 rounded-lg" style="background: linear-gradient(135deg, #1a6bb3 0%, #0d4a8a 100%); color: white;">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-5">⚽ Premier League Success</h5>
+                  <p class="card-text">Возвращение на вершину английского футбола. Мы бьемся за каждый мяч и показываем зрелищный футбол в каждой игре.</p>
+                  <a href="players.html" style="color: #FFD700; text-decoration: underline; font-weight: 600;">Узнать больше >>></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="card shadow-lg border-0 rounded-lg" style="background: linear-gradient(135deg, #C8102E 0%, #E84C3D 100%); color: white;">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-5">💪 You'll Never Walk Alone</h5>
+                  <p class="card-text">Это больше, чем гимн. Это философия нашей семьи. Мы едины с командой в моменты триумфа и в трудные времена.</p>
+                  <a href="history.html" style="color: white; text-decoration: underline; font-weight: 600;">Узнать больше >>></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<style>
+  #fan-btn:active { transform: scale(0.95); }
+  .floating-heart {
+    position: absolute;
+    font-size: 2rem;
+    pointer-events: none;
+    animation: floatUp 1.5s ease-out forwards;
+    z-index: 1000;
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-150px) scale(1.5) rotate(20deg); opacity: 0; }
+  }
+</style>
+
+<script>
+  const fanBtn = document.getElementById('fan-btn');
+  const counterDisplay = document.getElementById('click-counter');
+  
+  // Получаем количество кликов из памяти браузера
+  let clicks = localStorage.getItem('liverpoolFanClicks') || 0;
+  counterDisplay.innerText = clicks;
+
+  fanBtn.addEventListener('click', function(e) {
+    // Увеличиваем счетчик
+    clicks++;
+    localStorage.setItem('liverpoolFanClicks', clicks);
+    counterDisplay.innerText = clicks;
+
+    // Создаем сердечко
+    const heart = document.createElement('div');
+    heart.innerHTML = '❤️';
+    heart.classList.add('floating-heart');
+    
+    // Позиционируем сердечко в месте клика
+    const rect = fanBtn.getBoundingClientRect();
+    const x = e.clientX - rect.left - 15; // Центрируем по курсору
+    const y = e.clientY - rect.top - 15;
+    
+    heart.style.left = `${x}px`;
+    heart.style.top = `${y}px`;
+    
+    // Добавляем случайный размер и сдвиг для красоты
+    const randomScale = Math.random() * 0.5 + 0.8;
+    heart.style.fontSize = `${2 * randomScale}rem`;
+    
+    fanBtn.appendChild(heart);
+
+    // Удаляем сердечко после анимации
+    setTimeout(() => {
+      heart.remove();
+    }, 1500);
+  });
+</script>
+
+  <footer class="mt-4 py-3" style="background-color: #000; color: white;">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-12 footer-text text-center mt-2 fw-semibold">
+          <p class="mb-0">© 2026 Ливерпуль ФК. Все права защищены.</p>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-text text-center mt-2 fw-semibold">
+          <p class="mb-0">Легенды клуба <br> Академия <br> Сообщество фанатов</p>
+        </div>
+        <div class="col-lg-4 col-md-12 media-links text-center mt-2">
+          <img style="width: 40px; margin-inline: 1em; cursor: pointer;" src="source/files/yt.png" alt="YouTube">
+          <img style="width: 40px; margin-inline: 1em; cursor: pointer;" src="source/files/tg.png" alt="Telegram">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

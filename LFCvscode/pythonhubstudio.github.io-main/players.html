@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/styles/mycss.css">
+  <title>Ливерпуль ФК - Состав команды</title>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .card-img-top {
+      height: auto;
+      max-height: 350px;
+      width: 100%;
+      object-fit: contain;
+    }
+    
+    /* Точечная корректировка для карточек */
+    .img-default { object-position: center; }
+    .img-salah, .img-alisson, .img-gakpo { object-position: center; }
+    .img-wirtz { object-position: center; }
+    
+    .card {
+      height: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease-in-out;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .btn-custom {
+      background-color: #C8102E; 
+      border-color: #C8102E;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+    .btn-custom:hover {
+      background-color: #a00d24;
+      border-color: #a00d24;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #000000; border-bottom: 3px solid #C8102E;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="font-weight: 800; color: #C8102E; font-size: 1.5em;">🔴 Ливерпуль ФК</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html" style="color: white;">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="players.html" style="color: #C8102E; font-weight: 800;">Игроки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html" style="color: white;">История и Награды</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/@LiverpoolFC" target="_blank">
+                <img style="width: 30px;" src="source/files/yt.png" alt="YouTube">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/liverpoolfc/" target="_blank">
+                <img style="width: 30px;" src="source/files/inst.png" alt="Instagram">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://t.me/LiverpoolFC" target="_blank">
+                <img style="width: 25px;" src="source/files/tg.png" alt="Telegram">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container-fluid mt-4 mb-5">
+      <div class="row">
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-8 col-md-12">
+          <div class="row">
+            
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <a href="#"><img src="source/images/salah.jpg" class="card-img-top img-salah" alt="Мохаммед Салах"></a>
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title fw-bold">Мохаммед Салах</h5>
+                  <p class="card-text text-muted mb-4">
+                    Вингер | Египет | Номер: 11 <br>Египетский король, лучший бомбардир и лидер атаки «Красных».
+                  </p>
+                  <a href="salah.html" class="btn btn-primary btn-custom mt-auto">Профиль игрока</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/vandijk.jpg" class="card-img-top img-default" alt="Вирджил ван Дейк">
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title fw-bold">Вирджил ван Дейк</h5>
+                  <p class="card-text text-muted mb-4">
+                    Защитник | Нидерланды | Номер: 4 <br>Капитан команды и непроходимая скала в центре обороны.
+                  </p>
+                  <a href="vandijk.html" class="btn btn-primary btn-custom mt-auto">Профиль игрока</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/alisson.jpg" class="card-img-top img-alisson" alt="Алиссон Беккер">
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title fw-bold">Алиссон Беккер</h5>
+                  <p class="card-text text-muted mb-4">
+                    Вратарь | Бразилия | Номер: 1 <br>Надежный страж ворот, обладающий феноменальной реакцией.
+                  </p>
+                  <a href="alisson.html" class="btn btn-primary btn-custom mt-auto">Профиль игрока</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/gakpo.jpg" class="card-img-top img-gakpo" alt="Коди Гакпо">
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title fw-bold">Коди Гакпо</h5>
+                  <p class="card-text text-muted mb-4">
+                    Нападающий | Нидерланды | Номер: 18 <br>Мощный и креативный форвард с убийственным ударом.
+                  </p>
+                  <a href="gakpo.html" class="btn btn-primary btn-custom mt-auto">Профиль игрока</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/Szoboszlai.jpg" class="card-img-top img-default" alt="Доминик Собослаи">
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title fw-bold">Доминик Собослаи</h5>
+                  <p class="card-text text-muted mb-4">
+                    Полузащитник | Венгрия | Номер: 8 <br>Энергичный плеймейкер, диктующий темп игры в центре поля.
+                  </p>
+                 <a href="szoboszlai.html" class="btn btn-primary btn-custom mt-auto">Профиль игрока</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/ekitike.jpg" class="card-img-top img-default" alt="Юго Экитике">
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title fw-bold">Юго Экитике</h5>
+                  <p class="card-text text-muted mb-4">
+                    Нападающий | Франция | Номер: 22 <br>Взрывной и техничный форвард, кошмар для защитников соперника.
+                  </p>
+                  <a href="ekitike.html" class="btn btn-primary btn-custom mt-auto">Профиль игрока</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/wirtz.jpg" class="card-img-top img-wirtz" alt="Флориан Вирц">
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title fw-bold">Флориан Вирц</h5>
+                  <p class="card-text text-muted mb-4">
+                    Полузащитник | Германия | Номер: 7 <br>Футбольный гений, мастер голевых передач и креативных решений.
+                  </p>
+                  <a href="wirtz.html" class="btn btn-primary btn-custom mt-auto">Профиль игрока</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4">
+              <div class="card">
+                <img src="source/images/Slot.jpg" class="card-img-top img-default" alt="Арне Слот">
+                <div class="card-body d-flex flex-column text-center">
+                  <h5 class="card-title fw-bold">Арне Слот</h5>
+                  <p class="card-text text-muted mb-4">
+                    Главный Тренер | Нидерланды <br>Гениальный тактик, ведущий красную машину к новым свершениям.
+                  </p>
+                  <a href="slot.html" class="btn btn-primary btn-custom mt-auto">Профиль тренера</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-12 col-md-12 text-center mt-5">
+            <h3 style="font-weight: 800; color: #C8102E;">🔴 Встречайте наших героев!</h3>
+          </div>
+          <div class="col-lg-12 col-md-12 text-center mt-3">
+            <img class="call-anim" style="width: 50px; cursor: pointer;" src="source/files/phone.png" alt="Связаться">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+          <div class="row px-2">
+            <div class="col-lg-12 sidebar my-4 p-3 shadow-sm rounded" style="background-color: #f8f9fa;">
+              <p><strong>🏆 Premier League</strong><br> Самая зрелищная лига в мире. «Ливерпуль» бьется с лучшими клубами планеты и всегда нацелен на золотые медали. <a href="#" style="color: #C8102E; text-decoration: none; font-weight: 600;">Узнать больше >>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4 p-3 shadow-sm rounded" style="background-color: #f8f9fa;">
+              <p><strong>💪 Team Spirit</strong><br> Нас объединяет одна цель — радовать фанатов и выигрывать трофеи. Вместе мы — несокрушимая сила на поле. <a href="#" style="color: #C8102E; text-decoration: none; font-weight: 600;">Узнать больше >>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4 p-3 shadow-sm rounded" style="background-color: #f8f9fa;">
+              <p><strong>⚽ Youth Academy</strong><br> Наша гордость. Академия клуба воспитывает суперзвезд будущего, передавая им дух и философию великого «Ливерпуля». <a href="#" style="color: #C8102E; text-decoration: none; font-weight: 600;">Узнать больше >>></a></p>
+            </div>
+            <div class="col-lg-12 sidebar my-4 p-3 shadow-sm rounded" style="background-color: #f8f9fa;">
+              <p><strong>🌐 Global Legacy</strong><br> Игроки «Красных» с честью представляют свои сборные на чемпионатах мира и Европы, преумножая наше наследие. <a href="#" style="color: #C8102E; text-decoration: none; font-weight: 600;">Узнать больше >>></a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-4 py-3" style="background-color: #000; color: white;">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-12 footer-text text-center mt-2 fw-semibold">
+          <p class="mb-0">© 2026 Ливерпуль ФК. Все права защищены.</p>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-text text-center mt-2 fw-semibold">
+          <p class="mb-0">Основной состав <br> Академия <br> Фан-клуб</p>
+        </div>
+        <div class="col-lg-4 col-md-12 media-links text-center mt-2">
+          <img style="width: 40px; margin-inline: 1em; cursor: pointer;" src="source/files/yt.png" alt="YouTube">
+          <img style="width: 40px; margin-inline: 1em; cursor: pointer;" src="source/files/tg.png" alt="Telegram">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

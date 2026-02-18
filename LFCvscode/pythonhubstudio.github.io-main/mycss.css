@@ -1,0 +1,20 @@
+/* Общие настройки для всех фото игроков */
+.card-img-top, .carousel-item img {
+    height: 400px; /* Фиксированная высота для единообразия */
+    object-fit: cover;
+    object-position: center 15%; /* Базово поднимаем фокус выше */
+}
+
+/* Персональные правки */
+.img-salah, .img-alisson, .img-gakpo {
+    object-position: center 5%; /* Еще выше */
+}
+
+.img-wirtz {
+    object-position: center 0%; /* Максимально вверх для Вирца */
+}
+
+/* Стильный шрифт для всего сайта */
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
